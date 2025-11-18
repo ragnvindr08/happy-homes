@@ -98,7 +98,7 @@ TEMPLATES = [
 ]
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'frontend/build/static'),
+    os.path.join(BASE_DIR.parent, 'frontend/build/static'),
 ]
 
 WSGI_APPLICATION = 'core.wsgi.application'
