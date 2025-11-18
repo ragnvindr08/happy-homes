@@ -68,7 +68,9 @@ CORS_ALLOWED_ORIGINS = [
     "https://qrfy.io",  # ngrok
     "http://localhost:3000",                 # desktop dev
     "http://127.0.0.1:3000",                 # desktop dev alternate
-    "http://192.168.1.100:3000",  
+    "http://192.168.1.100:3000",
+    "https://happy-homes-thesis.vercel.app",
+    "https://happy-homes-djxo.onrender.com",  
 ]
 
 CSRF_TRUSTED_ORIGINS = [
