@@ -2,19 +2,16 @@
   "version": 2,
   "builds": [
     {
-      "src": "frontend/package.json",
+      "src": "package.json",
       "use": "@vercel/static-build",
       "config": { "distDir": "build" }
     }
   ],
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/frontend/build/$1"
-    }
+    { "src": "/(.*)", "dest": "/$1" }
   ],
   "env": {
-    "REACT_APP_API_BASE_URL": "https://your-backend-url.onrender.com/api",
-    "FRONTEND_URL": "https://your-vercel-frontend.vercel.app"
+    "REACT_APP_API_BASE_URL": "https://happy-homes-djxo.onrender.com",
+    "FRONTEND_URL": "https://happy-homes-thesis.vercel.app"
   }
 }
